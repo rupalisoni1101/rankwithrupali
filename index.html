@@ -20,10 +20,29 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1194152532717321');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1194152532717321&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- FB Access Token -->
+    <!-- EAAeUZBzZB56KwBReZBu7pnaWhZA7Mh7k7bhX88ZCSLUZCWRRhHaowFSBoUIafEkXb6ifQOZCwTCPFim1smZAi6ZA5Yir0r66PhI75aQmGnXu6OI57YJd7NP6ihwVbqGpXCx7z4OZAQZBtuBmScr2u7ZBXgD5WG8Wa5MYAEvF0VZCZAhHmjA25Wcn2Fzz3GVHfXOZAZA8ZAgXf0AZDZD -->
 </head>
 <body>
     <!-- NAV -->
-    <nav>
+    <nav id="mainNav">
         <a href="#" class="logo">
             <div class="logo-mark">R</div>
             <div class="logo-name">Rank<em>With</em>Rupali</div>
@@ -36,7 +55,7 @@
             <li><a href="#faq">FAQ</a></li>
             <li><a href="https://calendly.com/rupalisoni1101/30min" class="nav-cta" target="_blank">Book Call</a></li>
         </ul>
-        <button class="menu-btn">
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
